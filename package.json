@@ -5,6 +5,10 @@
   "version": "0.0.1",
   "icon": "images/icon.jpeg",
   "publisher": "tuannguyen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuan/symbolautocomplete.git"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -28,8 +32,8 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test",
-    "vscode:package": "npm vsce package --no-dependencies",
-    "vscode:publish": "npm vsce publish --no-dependencies"
+    "vscode:package": "vsce package --no-dependencies",
+    "vscode:publish": "vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@types/vscode": "^1.99.0",
